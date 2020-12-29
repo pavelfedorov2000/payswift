@@ -61,5 +61,8 @@ $(function(){
     // datepicker
     $(".datetime-popup__calendar").datepicker({
         minDate: new Date(),
-    }); 
+    });
+    var chosenDate = $( ".datetime-popup__calendar" ).datepicker( "getDate" );
+    $('#date').text(chosenDate);
+    //$('#time').text();
 });
