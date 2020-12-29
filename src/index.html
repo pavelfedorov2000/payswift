@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title></title>
+</head>
+
+<body>
+
+    <a class="open-popup" href="#">Open popup</a>
+    <div class="overlay">
+        <div id="activation" class="popup">
+            <img class="popup-close popup__close" src="img/popup-close.svg" alt="">
+            <div class="popup__title">
+                Активация сертификата
+            </div>
+            <form class="popup__form">
+                <input class="popup__form-item popup__form-input" type="text" placeholder="Код активации">
+                <input class="popup__form-item popup__form-input" type="text" placeholder="Код активации">
+                <input class="popup__form-item popup__form-input" type="text" placeholder="Код активации">
+                <a href="#" id="get-code" class="popup__form-item popup__form-btn popup__form-btn--black">
+                    Получить код
+                </a>
+                <a href="steps.html" class="popup__form-item popup__form-btn popup__form-btn--gradient" type="submit">
+                    Активировать сертификат
+                </a>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
