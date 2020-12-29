@@ -56,5 +56,10 @@ $(function(){
         $('#confirm-text').text('Мы вас записываем,  ожидайте. В течении 1 часа вам придёт смс-подтверждение о бронировании');
         $('.confirm__item-buttons').css('display', 'none');
     });
-    
+
+
+    // datepicker
+    $(".datetime-popup__calendar").datepicker({
+        minDate: new Date(),
+    }); 
 });

@@ -1,6 +1,7 @@
 @import "base/vars";
 @import "base/libs";
 @import "base/fonts";
+@import "base/datepicker";
 
 html {
     box-sizing: border-box;
@@ -138,7 +139,7 @@ ul, li {
     }
     &__congratulation {
         padding: 34px 0 33px 38px;
-        margin-bottom: 40px;
+        min-height: 351px;
     }
     &__congratulation-title {
         margin-bottom: 13px;
@@ -177,7 +178,7 @@ ul, li {
             align-items: center;
             img {
                 display: block;
-                margin-right: 8px;
+                margin-right: 6px;
             }
         }
         li + li {
@@ -288,6 +289,10 @@ ul, li {
         &:nth-child(2) {
             display: none;
         }
+        &--without-img {
+            padding: 40px 0;
+            text-align: center;
+        }
     }
 
     &__question-card {
@@ -318,7 +323,7 @@ ul, li {
     }
 
     &__card-img {
-        display: block;
+        display: inline-block;
         max-width: 100%;
         height: auto;
         object-fit: contain;
