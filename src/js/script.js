@@ -36,7 +36,7 @@ $(function(){
         $('#step-3').removeClass('certificate__step--disabled');
     });
     $('.map-popup__close').on('click', function() {
-        $('.info-popup').fadeOut('slow');
+        $('.map-popup').fadeOut('slow');
         $('.certificate__content').fadeIn('slow');
     });
 
